@@ -3,10 +3,19 @@ import time
 
 from appium import webdriver
 
+# desired_caps = {
+#     'platformName': 'Android',
+#     'deviceName': '6c8caec0',
+#     'platformVersion': '8.1.0',
+#     # apk 包名
+#     'appPackage': 'com.unicom.zworeader.ui',
+#     # apk 的 launcherActivity
+#     'appActivity': 'com.unicom.zworeader.ui.QuickStartActivity'
+# }
 desired_caps = {
     'platformName': 'Android',
-    'deviceName': '6c8caec0',
-    'platformVersion': '8.1.0',
+    'deviceName': 'emulator-5554 ',
+    'platformVersion': '5.0',
     # apk 包名
     'appPackage': 'com.unicom.zworeader.ui',
     # apk 的 launcherActivity
@@ -14,7 +23,7 @@ desired_caps = {
 }
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 # 休眠5秒等待页面加载完成
-time.sleep(5)
+time.sleep(10)
 # 自右向左滑动页面
 i = 0
 while i < 3:
