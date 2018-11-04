@@ -21,8 +21,7 @@ while i < 3:
     driver.swipe(300, 1200, 600, 1200, 300)
     i = i+1
 driver.find_element_by_id("com.linkedin.android:id/growth_prereg_v2_fragment_account_exists").click()
-# try:
-#     logInText = driver.f
+
 
 # 在登录页面输入账号密码，点击登录按钮
 driver.find_element_by_id("com.linkedin.android:id/growth_login_fragment_sign_in").send_keys("zouyuxiaoyu@gmail.com")
